@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom right, #1f1c2c, #928dab);
+    color: white;
+}
+
+/* Section Default Styling */
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Soft dark overlay */
+    color: white;
+}
+
+/* Individual Backgrounds */
+#intro {
+    background-image: url('../img/bg_7.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#aboutMe {
+    background-image: url('../img/bg_13.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#aboutYou {
+    background-image: url('../img/bg_0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#whyThis {
+    background-image: url('../img/bg_8.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#ourDreams {
+    background-image: url('../img/bg_5.jpg');
+}
+
+#closeNote {
+    background-image: url('../img/bg_11.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Section Content Container */
+.section-content {
+    max-width: 720px;
+    margin: auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #000;
+  color: white;
+}
+
+.footer-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
