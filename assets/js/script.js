@@ -271,23 +271,3 @@ renderStories();
 renderPoem();
 renderDreams();
 
-// custome script
-document.getElementById('submitAndRedirect').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent normal button action
-
-  const input = document.getElementById('storyInput');
-  const val = input.value.trim();
-
-  if (val) {
-    let stories = JSON.parse(localStorage.getItem('sharedStories')) || [];
-    stories.push(val);
-    localStorage.setItem('sharedStories', JSON.stringify(stories));
-    input.value = '';
-
-    // Redirect after short delay (or immediately)
-    window.location.href = "https://www.facebook.com/rayadkhan001/";
-  } else {
-    alert("Please write something before submitting.");
-  }
-});
-
