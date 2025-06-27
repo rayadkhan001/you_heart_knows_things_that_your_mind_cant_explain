@@ -2,180 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Heart Knows</title>
-    <link rel="icon" href="assets/img/logo/favicon/wolf.png" type="wolf.png" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Google Font for handwriting -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Heart Knows</title>
+  <link rel="icon" href="assets/img/logo/favicon/wolf.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
 </head>
 
-<body class="font-sans bg-gradient-to-br from-[#2c2336] to-[#3e3248] text-white">
+<body class="text-white">
 
-    <!-- Navigation Menu -->
-    <div class="fixed top-0 left-0 w-full bg-opacity-80 bg-black z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-            <h1 class="text-xl font-bold">Stranger <span class="text-pink-400">&</span> Tonika</h1>
-            <div class="space-x-4">
-                <a href="#intro" class="btn btn-sm btn-outline text-white">Start</a>
-                <a href="#aboutMe" class="btn btn-sm btn-outline text-white">Who Am I?</a>
-                <a href="#aboutYou" class="btn btn-sm btn-outline text-white">Who Are You?</a>
-                <a href="#whyThis" class="btn btn-sm btn-outline text-white">Why This?</a>
-                <a href="#closeNote" class="btn btn-sm btn-outline text-white">Just Something</a>
-            </div>
-        </div>
+  <!-- Navigation Menu -->
+  <div class="fixed top-0 left-0 w-full bg-opacity-80 bg-black z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl font-bold">Stranger <span class="text-pink-400">&</span> Tonika</h1>
+      <div class="space-x-4">
+        <a href="#intro" class="btn btn-sm btn-outline text-white">
+          <i class="fa-solid fa-play-circle mr-1"></i>Start
+        </a>
+        <a href="#aboutMe" class="btn btn-sm btn-outline text-white">
+          <i class="fa-solid fa-user-secret mr-1"></i>Who Am I?
+        </a>
+        <a href="#aboutYou" class="btn btn-sm btn-outline text-white">
+          <i class="fa-solid fa-question-circle mr-1"></i>Who Are You?
+        </a>
+        <a href="#whyThis" class="btn btn-sm btn-outline text-white">
+          <i class="fa-solid fa-heart mr-1"></i>Why This?
+        </a>
+        <a href="#closeNote" class="btn btn-sm btn-outline text-white">
+          <i class="fa-solid fa-feather-pointed mr-1"></i>Just Something
+        </a>
+      </div>
     </div>
+  </div>
 
-    <!-- Section 1: Intro -->
-    <section id="intro" class="min-h-screen flex items-center justify-center text-center px-6 pt-20">
-        <div>
-            <h2 class="text-4xl font-bold">YOUR HEART KNOWS THINGS<br/>THAT YOUR MIND CAN’T EXPLAIN.</h2>
-            <p class="mt-4 text-lg text-pink-200">If you smile when no one is around, you really mean it.</p>
-        </div>
-    </section>
+  <!-- Section 1: Intro -->
+  <section id="intro" class="min-h-screen flex items-center justify-center text-center px-6 pt-20">
+    <div>
+      <h2 class="text-4xl font-bold">YOUR HEART KNOWS THINGS<br />THAT YOUR MIND CAN’T EXPLAIN.</h2>
+      <p class="mt-4 text-lg text-pink-200">If you smile when no one is around, you really mean it.</p>
+    </div>
+  </section>
 
-    <!-- Section 2: About Me (Interactive) -->
-    <section id="aboutMe" class="min-h-screen px-6 py-16 text-white">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4">ABOUT ME</h2>
-            <p>
-                Not sure how to say it, so I’ll let you choose what you want to know about me.
-                Click a button below:
-            </p>
+  <!-- Section 2: About Me -->
+  <section id="aboutMe" class="min-h-screen px-6 py-16 text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">ABOUT ME</h2>
+      <p>
+        Not sure how to say it, so I’ll let you choose what you want to know about me.
+        Click a button below:
+      </p>
 
-            <div class="about-me-choices flex flex-col space-y-3 mt-6 max-w-xl mx-auto">
-                <button class="choice-btn btn btn-outline btn-sm text-white w-full sm:w-[260px] mx-auto"
-                    data-target="secretFears">My secret fears</button>
-                <button class="choice-btn btn btn-outline btn-sm text-white w-full sm:w-[260px] mx-auto"
-                    data-target="reasonBuild">Why I build things</button>
-                <button class="choice-btn btn btn-outline btn-sm text-white w-full sm:w-[260px] mx-auto"
-                    data-target="whatMakesMeSmile">What makes me smile</button>
-            </div>
+      <div class="about-me-choices flex flex-col space-y-3 mt-6 max-w-xl mx-auto">
+        <button class="choice-btn btn btn-outline btn-sm text-white w-full sm:w-[260px] mx-auto" data-target="secretFears">
+          <i class="fa-solid fa-mask mr-2"></i>My secret fears
+        </button>
+        <button class="choice-btn btn btn-outline btn-sm text-white w-full sm:w-[260px] mx-auto" data-target="reasonBuild">
+          <i class="fa-solid fa-code mr-2"></i>Why I build things
+        </button>
+        <button class="choice-btn btn btn-outline btn-sm text-white w-full sm:w-[260px] mx-auto" data-target="whatMakesMeSmile">
+          <i class="fa-solid fa-face-smile-beam mr-2"></i>What makes me smile
+        </button>
+      </div>
 
-            <div id="reasonBuild"
-                class="choice-content mt-4 p-4 bg-[#4a3f55] rounded-lg text-pink-200 hidden max-w-xl mx-auto"
-                role="region" aria-live="polite">I build things when words aren’t enough, it’s how I speak when silence
-                takes over.</div>
-            <div id="secretFears"
-                class="choice-content mt-4 p-4 bg-[#4a3f55] rounded-lg text-pink-200 hidden max-w-xl mx-auto"
-                role="region" aria-live="polite">Sometimes, I fear being lost in a crowd, invisible, unheard and
-                forgotten.</div>
-            <div id="whatMakesMeSmile"
-                class="choice-content mt-4 p-4 bg-[#4a3f55] rounded-lg text-pink-200 hidden max-w-xl mx-auto"
-                role="region" aria-live="polite">Sunsets, quiet mornings with imperfect coffee, and small acts of
-                kindness that remind me I’m not alone.</div>
-        </div>
-    </section>
+      <div id="reasonBuild" class="choice-content mt-4 p-4 bg-[#4a3f55] rounded-lg text-pink-200 hidden max-w-xl mx-auto" role="region" aria-live="polite">
+        I build things when words aren’t enough, it’s how I speak when silence takes over.
+      </div>
+      <div id="secretFears" class="choice-content mt-4 p-4 bg-[#4a3f55] rounded-lg text-pink-200 hidden max-w-xl mx-auto" role="region" aria-live="polite">
+        Sometimes, I fear being lost in a crowd, invisible, unheard and forgotten.
+      </div>
+      <div id="whatMakesMeSmile" class="choice-content mt-4 p-4 bg-[#4a3f55] rounded-lg text-pink-200 hidden max-w-xl mx-auto" role="region" aria-live="polite">
+        Sunsets, quiet mornings with imperfect coffee, and small acts of kindness that remind me I’m not alone.
+      </div>
+    </div>
+  </section>
 
-    <!-- Section 3: About You -->
-    <section id="aboutYou" class="section">
-        <div class="section-content max-w-3xl mx-auto px-6 py-16">
+  <!-- Section 3: About You -->
+  <section id="aboutYou" class="section">
+    <div class="section-content max-w-3xl mx-auto px-6 py-16">
+      <h2 class="section-title text-3xl font-bold mb-4">ABOUT YOU</h2>
+      <p class="mb-4 italic text-lg text-pink-200">Smile toh sab seekh lete hain...</p>
+      <p class="mb-8">I don’t know your story, not yet...</p>
+      <div class="about-you-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="assets/img/f1.png" alt="Her Moment 1" class="about-img rounded-lg shadow-lg" />
+        <img src="assets/img/bg_20.png" alt="Her Moment 2" class="about-img rounded-lg shadow-lg" />
+        <img src="assets/img/f3.png" alt="Her Moment 3" class="about-img rounded-lg shadow-lg" />
+      </div>
+      <p class="mt-8">I’m not trying to define you. Just admiring...</p>
+    </div>
+  </section>
 
-            <h2 class="section-title text-3xl font-bold mb-4">ABOUT YOU</h2>
-            <p class="mb-4 italic text-lg text-pink-200">Smile toh sab seekh lete hain, par asli khushi ka ehsaas sirf
-                kuch logon ko naseeb hota hai. Muskurahat se chhup jaata hai dard, magar khushi toh rooh tak utar jaati
-                hai. Kabhi apne liye bhi jeena seekho, sirf dikhane ke liye nahi, sach mein khush rehna bhi zaroori hota
-                hai.</p>
-            <p class="mb-8">I don’t know your story, not yet. But maybe the universe left pieces of it scattered in your
-                eyes, your smile, your silence. I’m just here to try and notice.</p>
+  <!-- Section 4: Why This Exists -->
+  <section id="whyThis" class="section">
+    <div class="content-container">
+      <h2 class="section-title">WHY THIS EXISTS?</h2>
+      <div class="divider-icon">✦</div>
+      <p>This is a personal map. A digital letter...</p>
+      <p class="quote">"Code is not just logic..."</p>
+      <ul class="timeline">
+        <li><a href="https://youtu.be/_f8YFQKoqHs?si=DCOud93SLrC42u9l"> Intention</a></li>
+        <li><a href="https://github.com/rayadkhan001"> Code</a></li>
+        <li><a href="https://www.instagram.com/rayadkhan001/"><i class="fa-brands fa-instagram"></i> Connection</a></li>
+        <li>Reflection</li>
+      </ul>
+      <p class="signature">~ Rayad Khan <span id="pulseHeart">♥</span></p>
+    </div>
+  </section>
 
-            <div class="about-you-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <img src="assets/img/f1.png" alt="Her Moment 1" class="about-img rounded-lg shadow-lg" />
-                <img src="assets/img/bg_20.png" alt="Her Moment 2" class="about-img rounded-lg shadow-lg" />
-                <img src="assets/img/f3.png" alt="Her Moment 3" class="about-img rounded-lg shadow-lg" />
-            </div>
+  <!-- Section 5: Shared Dreams -->
+  <section id="ourDreams" class="min-h-screen px-6 py-16 bg-[#564b6c] text-white">
+    <div class="max-w-3xl mx-auto space-y-12">
+      <h2 class="text-3xl font-bold mb-4">A Dreamboard</h2>
 
-            <p class="mt-8">I’m not trying to define you. Just learning to admire the version of you that chose to show
-                up in these still frames.</p>
-        </div>
-    </section>
+      <!-- Story Exchange -->
+      <div>
+        <h3 class="text-xl font-semibold mb-2">EXCHANGE ONE STORY EACH</h3>
+        <form id="storyForm" class="mb-4">
+          <textarea id="storyInput" rows="3" placeholder="Share a short story or memory..." class="w-full p-3 rounded bg-transparent text-white resize-none bgt" required></textarea>
+          <button id="submitAndRedirect" class="btn btn-sm btn-outline mt-2">
+            <i class="fa-solid fa-paper-plane mr-1"></i>Submit Story
+          </button>
+        </form>
+        <ul id="storyList" class="list-disc list-inside space-y-2 max-h-48 overflow-y-auto"></ul>
+      </div>
 
-    <!-- Section 4: Why This Exists (ENHANCED) -->
-    <section id="whyThis" class="section">
-        <div class="content-container">
-            <h2 class="section-title">WHY THIS EXISTS?</h2>
-            <div class="divider-icon">✦</div>
-            <p>This is a personal map. A digital letter. A safe space made of code and intention.</p>
-            <p class="quote">"Code is not just logic, it’s a love letter to those who seek meaning in the quiet."</p>
+      <!-- Shared Poem -->
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Write a Shared Poem Someday</h3>
+        <form id="poemForm" class="mb-4 flex flex-col md:flex-row gap-2">
+          <input id="poemInput" type="text" placeholder="Add a line or stanza..." class="flex-grow p-3 rounded bg-transparent bgt text-white" required />
+          <button type="submit" class="btn btn-sm btn-outline">
+            <i class="fa-solid fa-plus mr-1"></i>Add Line
+          </button>
+        </form>
+        <ul id="poemList" class="list-decimal list-inside space-y-2 max-h-48 overflow-y-auto text-pink-300 font-serif"></ul>
+      </div>
 
-            <ul class="timeline">
-                <li>Intention</li>
-                <li>Code</li>
-                <li>Connection</li>
-                <li>Reflection</li>
-            </ul>
+      <!-- Add Dream -->
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Add Your Dream Here...</h3>
+        <form id="dreamForm" class="mb-4">
+          <input id="dreamInput" type="text" placeholder="What’s your dream?" class="w-full p-3 rounded bg-transparent bgt text-white" required />
+          <button type="submit" class="btn btn-sm btn-outline mt-2">
+            <i class="fa-solid fa-moon mr-1"></i>Add Dream
+          </button>
+        </form>
+        <ul id="dreamList" class="list-disc list-inside space-y-2 max-h-48 overflow-y-auto"></ul>
+      </div>
+    </div>
+  </section>
 
-            <p class="signature">
-                ~ Rayad Khan
-                <span id="pulseHeart">♥</span>
-            </p>
-        </div>
-    </section>
+  <!-- Section 6: Final Note -->
+  <section id="closeNote" class="min-h-screen px-6 py-16 bg-[#302b3a] text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Just Something...</h2>
+      <p class="italic text-pink-200">If you're reading this... it means we’ve already started writing a story...</p>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer text-center py-6">
+    <div class="footer-inner text-center text-gray-500">
+      <p class="text-sm">&copy; Made with <span class="text-blue-400">💙</span> by Rayad Khan</p>
+    </div>
+  </footer>
 
-
-    <!-- Section 5: Shared Dreams -->
-    <section id="ourDreams" class="min-h-screen px-6 py-16 bg-[#564b6c] text-white">
-        <div class="max-w-3xl mx-auto space-y-12">
-            <h2 class="text-3xl font-bold mb-4">A Dreamboard</h2>
-
-            <!-- Exchange one story each -->
-            <div>
-                <h3 class="text-xl font-semibold mb-2">EXCHANGE ONE STORY EACH</h3>
-                <form id="storyForm" class="mb-4">
-                    <textarea id="storyInput" rows="3" placeholder="Share a short story or memory..."
-                        class="w-full p-3 rounded bg-transparent text-white resize-none bgt" required></textarea>
-                    <button id="submitAndRedirect" class="btn btn-sm btn-outline mt-2">Submit Story</button>
-                </form>
-                <ul id="storyList" class="list-disc list-inside space-y-2 max-h-48 overflow-y-auto"></ul>
-            </div>
-
-            <!-- Write a shared poem someday -->
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Write a Shared Poem Someday</h3>
-                <form id="poemForm" class="mb-4 flex flex-col md:flex-row gap-2">
-                    <input id="poemInput" type="text" placeholder="Add a line or stanza..."
-                        class="flex-grow p-3 rounded bg-transparent bgt text-white" required />
-                    <button type="submit" class="btn btn-sm btn-outline">Add Line</button>
-                </form>
-                <ul id="poemList"
-                    class="list-decimal list-inside space-y-2 max-h-48 overflow-y-auto text-pink-300 font-serif"></ul>
-            </div>
-
-            <!-- Add your dream here -->
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Add Your Dream Here...</h3>
-                <form id="dreamForm" class="mb-4">
-                    <input id="dreamInput" type="text" placeholder="What’s your dream?"
-                        class="w-full p-3 rounded bg-transparent bgt text-white" required />
-                    <button type="submit" class="btn btn-sm btn-outline mt-2">Add Dream</button>
-                </form>
-                <ul id="dreamList" class="list-disc list-inside space-y-2 max-h-48 overflow-y-auto"></ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 6: Final Note -->
-    <section id="closeNote" class="min-h-screen px-6 py-16 bg-[#302b3a] text-white">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Just Something...</h2>
-            <p class="italic text-pink-200">If you're reading this... it means we’ve already started writing a story,
-                even if it never becomes one.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center py-6">
-        <div class="footer-inner text-center text-gray-500">
-            <p class="text-sm">&copy; Made with <span class="text-blue-400">💙</span> by Rayad Khan</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/whyThisEnhancements.js"></script>
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/whyThisEnhancements.js"></script>
 </body>
 
 </html>

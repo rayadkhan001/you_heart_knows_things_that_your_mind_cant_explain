@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* FONT-AWESOME */
+i.fas, i.far, i.fab {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* solid icons */
+  font-style: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /* Smooth scrolling */
 html {
