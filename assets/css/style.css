@@ -102,24 +102,35 @@ button {
 }
 
 .choice-btn {
-    background: transparent;
-    border: 2px solid #f472b6;
-    color: #f472b6;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    width: 100%;
-    max-width: 300px;
-    align-self: center;
+  background: transparent;
+  border: 2px solid #f472b6;
+  color: #f472b6;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  align-self: center;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.choice-btn i {
+  margin-right: 6px;
 }
 
 .choice-btn:hover,
 .choice-btn:focus {
-    background-color: #09122C;
-    color: #E17564;
-    outline: none;
+  background-color: #09122C;
+  color: #E17564;
+  outline: none;
 }
+
 
 .choice-content {
     position: fixed;
